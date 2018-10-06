@@ -30,7 +30,7 @@ public class RemoteVehicleDetailsService implements VehicleDetailsService {
 		
 		Assert.notNull(vin, "vin should not be null");
 		String url = this.properties.getRootUrl() + "vehicle/{vin}/details";
-		logger.debug("Retrieving vehicle data for: " + vin + " from: " + url);
+		logger.debug("Retrieving vehicle data for: {0} from: {1} ", vin, url);
 		try
 		{
 		return this.restTemplate.getForObject(url, VehicleDetails.class, vin);
