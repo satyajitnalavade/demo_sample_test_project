@@ -11,6 +11,14 @@ import lombok.Data;
 public class RemoteVehicleDetailsServiceProperties {
 
 	
+	public String getRootUrl() {
+		return rootUrl;
+	}
+
+	public void setRootUrl(String rootUrl) {
+		this.rootUrl = rootUrl;
+	}
+
 	private String rootUrl = "http://localhost:8080/";
 	
 	
