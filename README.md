@@ -65,7 +65,7 @@ It often makes sense to have specific tests just to make sure the objects are ma
 1. The RestClientTest annotation allows you to test RestTemplate calls, as long as you've created them via the RestTemplateBuilder.
 2. It auto-configures RestTemplate beans.
 3. It provides Jackson, HttpMessageConverters
-4. it also provides a MockRestServiceServer bean.
+4. It provides a MockRestServiceServer bean.
 5. MockRestServiceServer is introduced in Spring 3.2 and it's a way of mocking out rest calls. You can configure it manually, but the new annotation just makes it a lot easier to use. Finally, we're actually injecting our service itself, so that we can do the calls that we wanna test.
 
 # Use @WebMvcTest
