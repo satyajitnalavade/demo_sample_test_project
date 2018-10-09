@@ -21,12 +21,6 @@ Although testing without Spring is the ideal, sometimes you will need to involve
 
 By default, SpringBootTest will try and find any SpringBoot configuration class. You can also override this. You can either add nested configuration classes, or you can use the classes attribute on the annotation.
 
-SpringBootTest can start up various different web environments. Use the web environment attribute if you want to start a mock servlet environment or start a real server environment either on a defined port or a random port. If you're using a random port, you can use the TestRestTemplate or the @LocalServerPort annotation in order to find out which port was actually used.
-
-if you're coming from an older version of Spring, you may have used SpringJUnit4ClassRunner. With Spring 4.3, this has been renamed, so you can just call it SpringRunner. It just makes your task classes a little bit more readable. 
-
-SpringBootTest will search from the package that you're in upwards until it finds a SpringBoot application class, so, more precisely, til it finds a SpringBoot configuration annotated class. So, in our case, this is our main application class by virtue of the fact it's annotated with SpringBoot application.
-
 TestRestTemplate allows you to make rest calls, but you don't need to specify the server or the port. 
 
  
