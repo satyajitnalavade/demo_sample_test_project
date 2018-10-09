@@ -37,9 +37,9 @@ When the test runs this mock instance is injected both into the application cont
 # Test Application slices
 
 Spring Boot introduces some new annotations that are specifically designed for testing application slices. 
-JSON
-Data JPA
-Rest Client
+JSON,
+Data JPA,
+Rest Client,
 Spring MVC
 
 
